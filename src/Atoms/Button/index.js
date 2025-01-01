@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Button.module.css';
-import "../../assets/styles/global.css";
 const Button = ({ label, onClick, variant = 'primary', disabled = false, type = 'button', customStyle = {} }) => {
   const buttonClass = `${styles.button} ${styles[variant]}`;
 
