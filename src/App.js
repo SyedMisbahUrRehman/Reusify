@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from './Atoms/Button';
+import styles from './App.module.css';
 
 const App = () => {
   const handleClick = () => {
@@ -8,14 +9,12 @@ const App = () => {
 
   return (
     <div>
-      {/* Default Button with Primary Variant */}
       <Button
         label="Primary Button" 
         onClick={handleClick} 
         variant="primary" 
       />
-      
-      {/* Secondary Button with custom inline style */}
+      <p className={styles.hello}>Hello</p>
       <Button 
         label="Custom Styled Secondary Button" 
         onClick={handleClick} 
@@ -23,7 +22,7 @@ const App = () => {
         customStyle={{ backgroundColor: '#8e44ad', color: 'white', padding: '12px 24px', fontSize: '16px' }} 
       />
       
-      {/* Danger Button with Disabled State */}
+     
       <Button 
         label="Disabled Danger Button" 
         onClick={handleClick} 
@@ -31,7 +30,7 @@ const App = () => {
         disabled 
       />
       
-      {/* A Large Button with Custom Style */}
+      
       <Button 
         label="Large Custom Styled Button" 
         onClick={handleClick} 
