@@ -1,5 +1,4 @@
 import React from 'react';
-import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import styles from './Button.module.css';
 
 const Button = ({
