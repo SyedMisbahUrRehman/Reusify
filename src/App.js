@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Button from './Atoms/Button';
 
-function App() {
+const App = () => {
+  const handleClick = () => {
+    alert('Button clicked!');
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* Default Button with Primary Variant */}
+      <Button
+        label="Primary Button" 
+        onClick={handleClick} 
+        variant="primary" 
+      />
+      
+      {/* Secondary Button with custom inline style */}
+      <Button 
+        label="Custom Styled Secondary Button" 
+        onClick={handleClick} 
+        variant="secondary" 
+        customStyle={{ backgroundColor: '#8e44ad', color: 'white', padding: '12px 24px', fontSize: '16px' }} 
+      />
+      
+      {/* Danger Button with Disabled State */}
+      <Button 
+        label="Disabled Danger Button" 
+        onClick={handleClick} 
+        variant="danger" 
+        disabled 
+      />
+      
+      {/* A Large Button with Custom Style */}
+      <Button 
+        label="Large Custom Styled Button" 
+        onClick={handleClick} 
+        customStyle={{ fontSize: '20px', padding: '16px 32px', backgroundColor: '#f39c12' }} 
+      />
     </div>
   );
-}
+};
 
 export default App;
