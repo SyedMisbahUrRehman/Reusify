@@ -14,7 +14,7 @@ const App = () => {
         onClick={handleClick} 
         variant="primary" 
       />
-      <p className={styles.hello}>Hello</p>
+      <p className="fs-18 fw-700">Hello</p>
       <Button 
         label="Custom Styled Secondary Button" 
         onClick={handleClick} 
