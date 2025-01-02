@@ -1,16 +1,12 @@
 .button {
-    border: none;
     padding: 10px;
     border-radius: 5px;
-    font-size: 14px;
     cursor: pointer;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-weight: 600;
   }
   
-  /* Button variants */
   .primary {
     background-color: var(--primary-color);
     color: var(--white-color);

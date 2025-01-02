@@ -23,7 +23,7 @@ const Button = ({
     >
       {iconLeft && <span className={styles.iconLeft}>{iconLeft}</span>}
       
-      {label}
+      <span className='fs-14 fw-600'>{label}</span>
 
       {iconRight && <span className={styles.iconRight}>{iconRight}</span>}
     </button>
