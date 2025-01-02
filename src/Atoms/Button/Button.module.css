@@ -1,6 +1,6 @@
 .button {
     border: none;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
@@ -12,23 +12,23 @@
   
   /* Button variants */
   .primary {
-    background-color: #3498db;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white-color);
   }
   
   .secondary {
-    background-color: #2ecc71;
-    color: white;
+    background-color:var(--secondary-color);
+    color: var(--white-color);
   }
   
   .danger {
-    background-color: #e74c3c;
-    color: white;
+    background-color: var(--danger-color);
+    color: var(--white-color);
   }
   
   :disabled {
-    background-color: #bdc3c7;
-    color: #7f8c8d;
+    background-color: var(--grey-light);
+    color: var(--grey-dark);
     cursor: not-allowed;
     opacity: 0.6;
   }

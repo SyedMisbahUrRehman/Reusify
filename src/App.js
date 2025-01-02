@@ -8,13 +8,13 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div style={{display:'flex',gap:"10px",justifyContent:'center',alignItems:'center'}}>
       {/* Button with an icon on the left */}
       <Button
         label="Previous"
         onClick={handleClick}
-        variant="primary"
-        iconLeft={<FaArrowLeft />} // Passing icon as a prop
+        variant="danger"
+        iconLeft={<FaArrowLeft />}
       />
       
       {/* Button with an icon on the right */}
@@ -22,17 +22,10 @@ const App = () => {
         label="Next"
         onClick={handleClick}
         variant="primary"
-        iconRight={<FaArrowRight />} // Passing icon as a prop
+        iconRight={<FaArrowRight />} 
       />
+      <p className='fs-18 fw-700'>Helooooo</p>
       
-      {/* Button with icons on both sides */}
-      <Button
-        label="Go"
-        onClick={handleClick}
-        variant="primary"
-        iconLeft={<FaArrowLeft />}
-        iconRight={<FaArrowRight />}
-      />
     </div>
   );
 };
