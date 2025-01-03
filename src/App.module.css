@@ -1,0 +1,15 @@
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
+  min-height: 100vh; /* Full viewport height */
+  background-color: var(--background-color, #f0f0f0); /* Fallback color */
+  padding: 20px; /* Add some padding */
+}
+
+.title {
+  font-size: 2rem; /* Larger font size for the title */
+  margin-bottom: 20px; /* Space below the title */
+  color: var(--primary-color); /* Use a primary color for the title */
+}

@@ -1,0 +1,17 @@
+.searchBar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .input {
+    padding: 11px;
+    border: 1px solid var(--grey-dark);
+    border-radius: 5px;
+    flex: 1; 
+    font-size: 14px;
+  }
+  
+  .input:focus {
+    border-color: var(--primary-color);
+  }
