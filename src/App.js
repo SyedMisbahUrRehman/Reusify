@@ -85,7 +85,7 @@ const App = () => {
       name: "United Nations",
       city: "Geneva",
       isVerified: true,
-      isOrganisation: true,
+      isOrganisation: false,
       isGov: true, 
     },
     {
