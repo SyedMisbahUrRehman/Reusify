@@ -1,16 +1,17 @@
-import React from 'react';
-import styles from './App.module.css'; 
-import Button from './Atoms/Button';
-import { FaIceCream } from 'react-icons/fa';
+import React from "react";
+import Card from "./Card";
 
 const App = () => {
+  const personData = {
+    name: "Misbahhhhhhhhhhhhhhhhhhhhhhhhh hbwuwu ww whbwd whswh",
+    age: 22,
+    city: "Karachi",
+    isVerified: true
+  };
+
   return (
-    <div className={styles.appContainer}>
-      <Button label="Custom Class aaaaaaaaaaaaaaaaa b d" customClass={styles.mybtn} iconRight={<FaIceCream/>}/>
-      <Button
-        label="Inline Styles"
-        customStyle={{ backgroundColor: "orange", color: "white", margin:"10px" }}
-      />
+    <div>
+      <Card data={personData} />
     </div>
   );
 };
