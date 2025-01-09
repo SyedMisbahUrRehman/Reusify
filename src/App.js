@@ -81,6 +81,20 @@ const App = () => {
       isVerified: false,
       isOrganisation: true,
     },
+    {
+      name: "United Nations",
+      city: "Geneva",
+      isVerified: true,
+      isOrganisation: true,
+      isGov: true, 
+    },
+    {
+      name: "World Bank",
+      city: "Washington DC",
+      isVerified: true,
+      isOrganisation: true,
+      isGov: true, 
+    },
   ];
 
   return (
