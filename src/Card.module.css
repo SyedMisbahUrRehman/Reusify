@@ -1,28 +1,38 @@
 .card {
     padding: 16px;
-    border: 1px solid #ddddddac;
+    border: 1px solid rgba(221, 221, 221, 0.67);
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.052);
-    background-color: #fff;
-    min-width: 300px;
-    width: auto;
-    margin: 16px auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    width: 320px;
+    margin: 16px auto;
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    gap: 8px;
   }
   
+  .nameWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
   
-  .card h2 {
-    font-size: 24px;
-    margin-bottom: 8px;
+  .name {
+    font-size: 1.2em;
+    font-weight: 600;
     color: #333;
+    max-width: 220px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   
-  .card p {
-    margin: 4px 0;
+  .city {
+    font-size: 1em;
     color: #666;
+    margin: 0;
   }
   
