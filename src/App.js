@@ -2,7 +2,7 @@ import React from "react";
 import Card from "./Card";
 
 const App = () => {
-  const peopleData = [
+  const data = [
     {
       name: "Misbahhhhhhhhhhhhh",
       city: "Karachi",
@@ -99,8 +99,8 @@ const App = () => {
 
   return (
     <div style={{ display: "flex", flexWrap: "wrap", gap: "16px", padding: "20px", justifyContent: "center" }}>
-      {peopleData.map((person, index) => (
-        <Card key={index} data={person} />
+      {data.map((entity, index) => (
+        <Card key={index} data={entity} />
       ))}
     </div>
   );
