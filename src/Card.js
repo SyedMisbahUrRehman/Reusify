@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Card.module.css";
 import { MdVerified } from "react-icons/md";
 
-const Card = ({ data: { name, city, isVerified, isOrganisation,isGov } }) => {
+const Card = ({ data: { name, city, isVerified, isOrganisation, isGov } }) => {
   return (
     <div className={styles.card}>
       <div className={styles.nameWrapper}>
@@ -11,6 +11,13 @@ const Card = ({ data: { name, city, isVerified, isOrganisation,isGov } }) => {
           <MdVerified
             color={isGov ? "gray" : isOrganisation ? "gold" : "blue"}
             size={20}
+            title={
+              isGov
+                ? "Government or Multilateral Organisation"
+                : isOrganisation
+                ? "Verified Organisation"
+                : "Verified"
+            }
           />
         )}
       </div>
