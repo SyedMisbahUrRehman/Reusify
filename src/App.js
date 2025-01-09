@@ -7,7 +7,7 @@ const App = () => {
       name: "Misbahhhhhhhhhhhhh",
       city: "Karachi",
       isVerified: true,
-      isOrganisation: true,
+      isOrganisation: false,
     },
     {
       name: "Ali",
