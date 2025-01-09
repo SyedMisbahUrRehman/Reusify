@@ -13,3 +13,7 @@
   margin-bottom: 20px; /* Space below the title */
   color: var(--primary-color); /* Use a primary color for the title */
 }
+.mybtn {
+  background-color: yellow;
+  color: grey;
+}

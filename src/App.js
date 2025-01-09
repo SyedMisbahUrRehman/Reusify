@@ -1,15 +1,16 @@
 import React from 'react';
-import SearchBar from './Molecules/SearchBar/index'; 
 import styles from './App.module.css'; 
-const App = () => {
-  const handleSearch = (query) => {
-    console.log('Searching for:', query);
-  };
+import Button from './Atoms/Button';
+import { FaIceCream } from 'react-icons/fa';
 
+const App = () => {
   return (
     <div className={styles.appContainer}>
-      <h1 className={styles.title}>My Search App</h1>
-      <SearchBar onSearch={handleSearch} />
+      <Button label="Custom Class aaaaaaaaaaaaaaaaa b d" customClass={styles.mybtn} iconRight={<FaIceCream/>}/>
+      <Button
+        label="Inline Styles"
+        customStyle={{ backgroundColor: "orange", color: "white", margin:"10px" }}
+      />
     </div>
   );
 };

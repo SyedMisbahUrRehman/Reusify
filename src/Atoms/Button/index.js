@@ -1,21 +1,23 @@
 import React from 'react';
 import styles from './Button.module.css';
+import { mergeClass } from '../../utils/mergeClass';
 
 const Button = ({
   label,
   onClick,
-  variant = 'primary',
+  variant,
   disabled = false,
   type = 'button',
-  customStyle = {},
+  customClass,
+  customStyle,
   iconLeft,
   iconRight
 }) => {
-  const buttonClass = `${styles.button} ${styles[variant]}`;
 
+  const combinedClasses = mergeClass(customClass, styles.button, styles[variant]);
   return (
     <button
-      className={buttonClass}
+      className={combinedClasses}
       onClick={onClick}
       disabled={disabled}
       type={type}
