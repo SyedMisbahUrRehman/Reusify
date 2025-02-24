@@ -18,6 +18,7 @@ export default function App() {
     <Route index element={<UserManagement />} />
     <Route path=":slug" element={<UserDetail />} />
   </Route>
+  <Route path="*" element={<h1>Not Found</h1>} />
 </Routes>
 
    </BrowserRouter>
