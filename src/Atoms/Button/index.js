@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Button.module.css';
-import { mergeClass } from '../../utils/mergeClass';
+import { mergeClass } from '../../utils/helper';
 
 const Button = ({
   label,
