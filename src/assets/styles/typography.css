@@ -1,28 +1,90 @@
 /* Font Sizes */
 .fs-12 {
-    font-size: 12px;
-  }
-  
-  .fs-14 {
-    font-size: 14px;
-  }
-  
-  .fs-16 {
-    font-size: 16px;
-  }
-  
-  .fs-18 {
-    font-size: 18px;
-  }
-  
-  .fs-20 {
-    font-size: 20px;
-  }
-  
-  .fs-24 {
-    font-size: 24px;
-  }
-  
+  font-size: 12px;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-20 {
+  font-size: 20px;
+}
+
+.fs-24 {
+  font-size: 24px;
+}
+
+/* Responsive Typography - Universal Breakpoints */
+
+/* Extra Small Devices (Phones, <576px) */
+@media (max-width: 576px) {
+  .fs-12 { font-size: 10px; }
+  .fs-14 { font-size: 12px; }
+  .fs-16 { font-size: 14px; }
+  .fs-18 { font-size: 16px; }
+  .fs-20 { font-size: 18px; }
+  .fs-24 { font-size: 20px; }
+}
+
+/* Small Devices (Tablets, 576px - 767px) */
+@media (min-width: 576px) and (max-width: 768px) {
+  .fs-12 { font-size: 11px; }
+  .fs-14 { font-size: 13px; }
+  .fs-16 { font-size: 15px; }
+  .fs-18 { font-size: 17px; }
+  .fs-20 { font-size: 19px; }
+  .fs-24 { font-size: 22px; }
+}
+
+/* Medium Devices (Laptops, 768px - 991px) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .fs-12 { font-size: 12px; }
+  .fs-14 { font-size: 14px; }
+  .fs-16 { font-size: 16px; }
+  .fs-18 { font-size: 18px; }
+  .fs-20 { font-size: 20px; }
+  .fs-24 { font-size: 24px; }
+}
+
+/* Large Devices (Desktops, 992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1200px) {
+  .fs-12 { font-size: 13px; }
+  .fs-14 { font-size: 15px; }
+  .fs-16 { font-size: 17px; }
+  .fs-18 { font-size: 19px; }
+  .fs-20 { font-size: 21px; }
+  .fs-24 { font-size: 25px; }
+}
+
+/* Extra Large Devices (Larger Desktops, 1200px - 1399px) */
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .fs-12 { font-size: 14px; }
+  .fs-14 { font-size: 16px; }
+  .fs-16 { font-size: 18px; }
+  .fs-18 { font-size: 20px; }
+  .fs-20 { font-size: 22px; }
+  .fs-24 { font-size: 26px; }
+}
+
+/* Extra Extra Large Devices (Very Large Screens, 1400px and above) */
+@media (min-width: 1400px) {
+  .fs-12 { font-size: 15px; }
+  .fs-14 { font-size: 17px; }
+  .fs-16 { font-size: 19px; }
+  .fs-18 { font-size: 21px; }
+  .fs-20 { font-size: 23px; }
+  .fs-24 { font-size: 28px; }
+}
+
   /* Font Weights */
   .fw-400 {
     font-weight: 400;
